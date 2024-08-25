@@ -1,0 +1,164 @@
+.banner-title {
+  position: relative;
+}
+
+.banner-title img {
+  width: 100vw;
+}
+
+.banner-title h1 {
+  position: absolute;
+  left: 60px;
+  bottom: 0;
+
+  font-family: "PT Serif";
+  font-style: italic;
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 91px;
+  /* identical to box height */
+
+  color: #caa45d;
+}
+
+.page-content {
+  padding: 60px;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+
+.card img {
+  height: 400px;
+}
+
+.card .content {
+  box-sizing: border-box;
+  background: #a87c2b;
+  height: 400px;
+  padding: 20px 40px;
+
+  font-family: "PT Serif";
+  font-style: italic;
+  font-weight: 400;
+  color: #ffffff;
+  width: 60vw;
+}
+
+.card .content .date {
+  font-size: 24px;
+  line-height: 40px;
+}
+
+.card .content .time {
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 40px;
+}
+
+.card .content .title {
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.card .content .subtitle {
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.card .content .info {
+  font-size: 16px;
+  line-height: 26px;
+  color: #000000;
+  margin: 20px 0;
+}
+
+.card .content .location {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.card .content .location .text {
+  font-size: 16px;
+}
+
+@media screen and (max-width: 880px) {
+  .banner-title h1 {
+    font-size: 48px;
+  }
+
+  .card .content .date {
+    font-size: 18px;
+  }
+
+  .card .content .time {
+    font-size: 12px;
+    line-height: 20px;
+    margin-bottom: 20px;
+  }
+
+  .card .content .title {
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .card img {
+    height: 300px;
+  }
+
+  .card .content {
+    height: 300px;
+  }
+
+  .card .content .title {
+    font-size: 20px;
+  }
+
+  .card .content .subtitle {
+    font-size: 12px;
+  }
+
+  .card .content .info {
+    font-size: 14px;
+    margin: 0;
+  }
+
+  .location svg {
+    width: 12px;
+  }
+
+  .card .content .location .text {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .card .content {
+    min-width: unset;
+  }
+
+  .banner-title h1 {
+    font-size: 32px;
+    line-height: normal;
+    margin-bottom: 12px;
+  }
+
+  .card {
+    flex-direction: column;
+  }
+
+  .card img {
+    height: 360px;
+  }
+
+  .card .content {
+    height: unset;
+    width: 288px;
+  }
+}

@@ -1,0 +1,173 @@
+body {
+  padding: 0 60px;
+}
+
+h1 {
+  font-family: "PT Serif";
+  font-style: italic;
+  font-weight: 700;
+  font-size: 60px;
+  color: #caa45d;
+}
+
+form {
+  background: rgba(202, 164, 93, 0.86);
+  border-radius: 30px;
+  padding: 40px;
+  margin-top: 40px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 28px;
+}
+
+form label {
+  font-family: "PT Serif";
+  font-style: italic;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 39px;
+
+  color: #ffffff;
+}
+
+.form input,
+textarea {
+  padding: 16px;
+  background: #d9d9d9;
+  border-radius: 12px;
+  outline: transparent;
+  border: 0;
+  margin-top: 12px;
+  font-family: "PT Serif";
+  font-style: italic;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.form input::placeholder,
+textarea::placeholder {
+  font-family: "PT Serif";
+  font-style: italic;
+  font-weight: 700;
+  font-size: 16px;
+
+  color: rgba(0, 0, 0, 0.31);
+}
+
+.form p {
+  font-family: "PT Serif";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 16px;
+  color: #ffffff;
+  margin-bottom: 12px;
+}
+
+.asterisk {
+  color: #ff0000;
+}
+
+#email-cb {
+  display: unset;
+}
+
+#phone-cb {
+  display: unset;
+}
+
+.cb {
+  display: flex;
+  align-items: center;
+}
+
+.checkmark {
+  height: 24px;
+  width: 24px;
+  background-color: #eee;
+  margin-top: 0 !important;
+  margin-right: 12px;
+}
+
+input ~ .checkmark {
+  background-color: #ccc;
+}
+
+input:checked.checkmark {
+  background-color: #1a3349;
+}
+
+form button {
+  background: #a87c2b;
+  border-radius: 10px;
+  padding: 10px 20px;
+  border: 0;
+  font-family: "PT Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+
+  color: #ffffff;
+  transition: all ease-in-out .3s;
+}
+
+form button:hover {
+  cursor: pointer;
+  background: #caa45d;
+}
+
+@media screen and (max-width: 700px) {
+  h1 {
+    font-size: 32px;
+  }
+
+  form {
+    margin-top: 20px;
+    padding: 24px;
+  }
+
+  form label {
+    font-size: 16px;
+    line-height: unset;
+  }
+
+  .form input,
+  textarea {
+    padding: 10px;
+    font-size: 12px;
+    margin-top: 4px;
+  }
+
+  .form input::placeholder,
+  textarea::placeholder {
+    font-size: 12px;
+  }
+
+  .form {
+    margin-bottom: 16px;
+  }
+
+  .checkmark {
+    height: 16px;
+    width: 16px;
+    margin-right: 8px;
+  }
+
+  .form p {
+    margin-bottom: 4px;
+    font-size: 12px;
+  }
+
+  form button {
+    padding: 6px 12px;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    padding: 0 32px;
+  }
+}

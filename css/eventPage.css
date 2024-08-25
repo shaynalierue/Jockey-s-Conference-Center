@@ -1,0 +1,319 @@
+.title {
+  position: relative;
+}
+
+.title img {
+  width: 100vw;
+}
+
+.title h1 {
+  font-family: "PT Serif";
+  font-style: italic;
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 91px;
+
+  color: #caa45d;
+  position: absolute;
+  top: 120px;
+  left: 60px;
+  max-width: 50vw;
+}
+
+.slide-container {
+  max-width: 90vw;
+  width: 100%;
+  padding: 40px 0;
+}
+
+.slide-content {
+  margin: 0 40px;
+  overflow: hidden;
+  border-radius: 25px;
+}
+
+/* .image-content,
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 14px;
+} */
+
+/* .image-content {
+  position: relative;
+  row-gap: 5px;
+  padding: 25px 0;
+} */
+
+.overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #4070f4;
+  border-radius: 25px 25px 0 25px;
+}
+
+.overlay::before,
+.overlay::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -40px;
+  height: 40px;
+  width: 40px;
+  background-color: #4070f4;
+}
+
+.overlay::after {
+  border-radius: 0 25px 0 0;
+  background-color: #fff;
+}
+
+.swiper-navBtn {
+  color: white;
+  background-color: var(--gold);
+  width: 60px !important;
+  height: 60px !important;
+  border-radius: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.swiper-navBtn:hover {
+  background-color: #a87c2b;
+}
+
+.swiper-navBtn::before,
+.swiper-navBtn::after {
+  color: white;
+  font-size: 28px !important;
+}
+
+.swiper-navBtn:before,
+.swiper-navBtn:after {
+  color: white;
+  font-size: 28px !important;
+}
+
+.swiper-button-next {
+  right: 0;
+}
+.swiper-button-prev {
+  left: 0;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card .info {
+  background: #a87c2b;
+  padding: 10px 20px 40px 20px;
+  width: 50vw;
+}
+
+.card .info .date {
+  font-family: "PT Serif";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  /* identical to box height */
+
+  color: #ffffff;
+}
+
+.card .info .time {
+  font-family: "PT Serif";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 19px;
+
+  color: #ffffff;
+}
+
+.card .info .title {
+  margin-top: 4vh;
+  font-family: "PT Serif";
+  font-style: italic;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  /* identical to box height */
+
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+
+.card .info .subtitle {
+  font-family: "PT Serif";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 19px;
+
+  color: #ffffff;
+  margin-top: 6px;
+}
+
+.card .info a {
+  display: block;
+  margin-top: 5vh;
+}
+.card .info .view-more-btn {
+  background: #1a3349;
+  padding: 12px;
+  font-family: "PT Serif";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+
+  color: #ffffff;
+  width: fit-content;
+  transition: all ease-in-out 0.3s;
+}
+
+.card .info .view-more-btn:hover {
+  cursor: pointer;
+  background: #caa45d;
+}
+
+.events-section {
+  padding: 60px;
+  position: relative;
+}
+
+.events-section h1 {
+  font-family: "PT Serif";
+  font-style: italic;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+
+  color: #caa45d;
+  margin-bottom: 40px;
+}
+
+.right-ornaments {
+  position: absolute;
+  right: 0;
+  top: 80px;
+}
+
+.left-ornaments {
+  position: absolute;
+  left: 0;
+  top: 80px;
+}
+
+.exhibition-section h1,
+.indoor-sports-section h1 {
+  text-align: right;
+}
+
+@media screen and (max-width: 1045px) {
+  .title h1 {
+    font-size: 48px;
+    line-height: normal;
+  }
+
+  .right-ornaments,
+  .left-ornaments {
+    width: 40vw;
+  }
+
+  .events-section h1 {
+    max-width: 40vw;
+  }
+
+  .exhibition-section h1,
+  .indoor-sports-section h1 {
+    margin-left: auto;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .title h1 {
+    font-size: 36px;
+    line-height: normal;
+    bottom: 24px;
+    top: unset;
+  }
+
+  .right-ornaments,
+  .left-ornaments {
+    width: 50vw;
+    height: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .slide-content {
+    margin: 0 10px;
+  }
+  .swiper-navBtn {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .title h1 {
+    left: 40px;
+  }
+
+  .card {
+    flex-direction: column;
+  }
+
+  .card img {
+    width: 50vw;
+  }
+
+  .events-section {
+    padding: 40px 12px;
+  }
+
+  .events-section h1 {
+    margin-bottom: 20px;
+    font-size: 32px;
+  }
+
+  .left-ornaments,
+  .right-ornaments {
+    top: 60px;
+  }
+
+  .card .info .title {
+    margin-top: 20px;
+  }
+
+  .card .info a {
+    margin-top: 28px;
+  }
+
+  .card .info .view-more-btn {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .title h1 {
+    font-size: 24px;
+    left: 20px;
+  }
+
+  .events-section h1 {
+    font-size: 24px;
+  }
+
+  .card .info .title {
+    font-size: 14px;
+  }
+}

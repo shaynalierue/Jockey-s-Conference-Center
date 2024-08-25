@@ -1,0 +1,165 @@
+footer {
+  padding: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .left {
+  width: 25vw;
+}
+
+footer .info {
+  font-family: "PT Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #ffffff;
+  margin: 32px 0;
+}
+
+footer input {
+  display: block;
+  background: rgba(255, 255, 255, 0.48);
+  border: none;
+  padding: 14px 32px;
+  color: white;
+  text-align: center;
+}
+
+footer input::placeholder {
+  font-family: "PT Serif";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 13px;
+  text-align: center;
+
+  color: #ffffff;
+}
+
+footer input:focus {
+  outline-color: #a87c2b;
+}
+
+footer button {
+  padding: 10px 20px;
+  background: #a87c2b;
+  border-radius: 20px;
+
+  font-family: "PT Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 13px;
+
+  color: #ffffff;
+  margin-top: 40px;
+  transition: all ease-in-out 0.3s;
+}
+
+footer button {
+  outline-color: transparent;
+}
+
+footer button:hover {
+  cursor: pointer;
+  background: #caa45d;
+}
+
+footer .mid {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+footer .mid a {
+  font-family: "PT Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 19px;
+  /* identical to box height */
+
+  color: #ffffff;
+}
+
+footer .mid a:hover {
+  cursor: pointer;
+  color: #a87c2b;
+}
+
+footer .right {
+  width: 13vw;
+  margin-top: 40px;
+}
+
+footer .right .socmed {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 14px;
+  margin: 20px 0;
+}
+
+footer .right p {
+  font-family: "PT Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 19px;
+  text-align: right;
+
+  color: #ffffff;
+}
+
+footer .right .socmed a {
+  transition: all ease-in-out 0.3s;
+}
+
+footer .right .socmed a:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+@media only screen and (max-width: 750px) {
+  footer {
+    flex-direction: column;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  footer .left {
+    width: unset;
+  }
+
+  footer .left .logo {
+    justify-content: center;
+    margin-right: 44px;
+  }
+
+  footer input {
+    margin: auto;
+  }
+
+  footer .right {
+    width: unset;
+  }
+
+  footer .right p {
+    text-align: center;
+  }
+
+  footer .right .socmed {
+    justify-content: center;
+  }
+
+  footer .right p:last-child {
+    margin-bottom: 40px;
+  }
+
+  footer .info {
+    max-width: 80vw;
+  }
+}

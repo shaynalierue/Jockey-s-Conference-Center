@@ -1,0 +1,144 @@
+.banner {
+  position: relative;
+}
+
+.banner img {
+  width: 100vw;
+}
+
+.banner .title {
+  position: absolute;
+
+  font-family: "PT Serif";
+  font-style: italic;
+  font-weight: 700;
+  font-size: 70px;
+
+  color: #ffffff;
+
+  background: rgba(202, 164, 93, 0.86);
+  padding: 0 32px 0 88px;
+
+  bottom: -40px;
+}
+
+.content {
+  padding: 80px;
+}
+
+.item {
+  display: flex;
+  max-width: 80vw;
+  justify-content: center;
+  align-items: center;
+  margin: 120px 0;
+}
+
+.item img {
+  z-index: 1;
+}
+
+.item .card {
+  background: #caa45d;
+  margin-left: -120px;
+  position: relative;
+  max-width: 60vw;
+  padding: 40px;
+}
+
+.item .card .title {
+  font-family: "PT Serif";
+  font-style: italic;
+  font-weight: 700;
+  font-size: 40px;
+
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.43);
+  position: absolute;
+  padding: 0 20px;
+
+  top: -30px;
+  right: -40px;
+}
+
+.item .card .info {
+  margin-left: 120px;
+  font-family: "PT Serif";
+  font-style: italic;
+  font-weight: 700;
+
+  color: #000000;
+
+  margin-top: 40px;
+}
+
+.item .card .info h1:first-child {
+  font-size: 30px;
+}
+
+.item .card .info h1:nth-child(2) {
+  font-size: 24px;
+}
+
+.item .card .info p {
+  font-size: 20px;
+}
+
+@media screen and (max-width: 800px) {
+  .banner .title {
+    font-size: 52px;
+    bottom: -20px;
+  }
+
+  .content {
+    padding: 40px;
+  }
+
+  .item {
+    flex-direction: column;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 60px;
+  }
+
+  .item img {
+    width: 60vw;
+  }
+
+  .item .card {
+    margin-left: 0;
+    padding: 20px;
+  }
+
+  .item .card .title {
+    font-size: 32px;
+    position: static;
+  }
+
+  .item .card .info h1:first-child {
+    font-size: 20px;
+  }
+
+  .item .card .info {
+    margin-left: 10px;
+    margin-top: 24px;
+  }
+
+  .item .card .info h1:nth-child(2) {
+    font-size: 16px;
+  }
+
+  .item .card .info p {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .banner .title {
+    font-size: 36px;
+  }
+
+  .item .card .title {
+    font-size: 24px;
+  }
+}
