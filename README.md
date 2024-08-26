@@ -4,5 +4,5 @@
 <br>
 📍Live Website : https://shaynalierue.github.io/Jockey-s-Conference-Center/
 https://scorue.notion.site/Jockey-s-Conference-Center-Website-Fulgencia-Shaynalie-Rue-02edfae3dab84541ba7c21d0e59b4a7c?pvs=4
-<br>
+<br><br>
 📍Website Documentation : website : https://shaynalierue.github.io/Jockey-s-Conference-Center/
